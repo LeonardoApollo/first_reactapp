@@ -22,9 +22,9 @@ const Navbar = () => {
         <div className='gpt3__navbar-links_logo'>
           <img src={logo} alt="logo" />
         </div>
-        <div className='gpt3__navbar-links_container'>
+        <nav className='gpt3__navbar-links_container'>
           <Menu/>
-        </div>
+        </nav>
       </div>
       <div className='gpt3__navbar-sign'>
         <p>Sign in</p>
@@ -37,13 +37,13 @@ const Navbar = () => {
         }
         {toggleMenu && (
           <div className='gpt3__navbar-menu_container scale-up-center'>
-            <div className='gpt3__navbar-menu_container-links'>
+            <nav className='gpt3__navbar-menu_container-links'>
             <Menu/>
               <div className='gpt3__navbar-menu_container-links-sign'>
                 <p>Sign in</p>
         <       button type='button'>Sign up</button>
               </div>
-            </div>
+            </nav>
           </div>
         )}
       </div>

@@ -6,17 +6,19 @@ import './styles/App.css';
 function App() {
   return (
     <div className='App'>
-      <div className='gradient__bg'>
+      <header className='gradient__bg'>
         <Navbar/>
         <Header/>
-      </div>
-      <Brand/>
-      <WhatGPT3/>
-      <Features/>
-      <Possibility/>
-      <CTA/>
-      <Blog/>
-      <Footer/>
+      </header>
+      <main className='main'>
+          <section><Brand/></section>
+          <section><WhatGPT3/></section>
+          <section><Features/></section>
+          <section><Possibility/></section>
+          <section><CTA/></section>
+          <section><Blog/></section>
+      </main>
+      <footer><Footer/></footer>
     </div>
   );
 }
